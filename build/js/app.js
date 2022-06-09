@@ -25,5 +25,3 @@ links.forEach((link) => {
     links[0].classList.add("selected");
   }
 });
-
-console.log(li[0]);
