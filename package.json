@@ -32,5 +32,8 @@
   "browserslist": [
     "last 1 version",
     "> 1%"
-  ]
+  ],
+  "dependencies": {
+    "sweetalert2": "^11.4.17"
+  }
 }

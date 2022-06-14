@@ -16,6 +16,7 @@
       src="https://kit.fontawesome.com/1a009a8fae.js"
       crossorigin="anonymous"
     ></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>DevpegAr | Web Development</title>
   </head>
   <body>
@@ -64,9 +65,67 @@
     </aside>
 
     <main class="contact">
-      <h3 class="contact__heading">Contacto</h3>
+      <div class="contact__header">
+        <h1 class="contact__heading">Contacto</h1>
+      </div>
+      <div class="contact__content-form">
+        <p class="contact__text">
+          Si estas interesado en mi trabajo, puedes contactarte conmigo desde
+          este formulario. A la brevedad posible estaré respondiendo tu
+          consulta.
+        </p>
+        <form
+          action="https://formsubmit.co/a30c2dad86f873e5cec911db3b634ba1"
+          method="post"
+          class="form"
+        >
+          <input
+            type="text"
+            placeholder="Nombre"
+            class="form__text"
+            id="name"
+            name="Nombre"
+          />
+          <input
+            type="email"
+            name="Email"
+            id="email"
+            placeholder="Correo electrónico"
+            class="form__email"
+          />
+          <input
+            type="text"
+            placeholder="Asunto"
+            class="form__subject"
+            id="subject"
+            name="Asunto"
+          />
+          <textarea
+            name="Mensaje"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Escribe aquí tu mensaje"
+            class="form__message"
+          ></textarea>
+          <input
+            type="hidden"
+            name="_next"
+            value="https://127.0.0.1:5500/gracias.html"
+          />
+          <div class="form__btns">
+            <button type="submit" id="submit">
+              <i class="fa-solid fa-paper-plane"></i>Enviar
+            </button>
+            <button type="reset" id="reset">
+              <i class="fa-solid fa-trash-can"></i>Resetear
+            </button>
+          </div>
+        </form>
+      </div>
     </main>
 
     <script src="build/js/app.js"></script>
+    <script src="build/js/sendEmail.js"></script>
   </body>
 </html>
